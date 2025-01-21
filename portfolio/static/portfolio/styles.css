@@ -11069,3 +11069,22 @@ html {
 .copyright {
   background-color: #1a252f;
 }
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  margin-top: 100px;
+}
+
+body.page-with-navbar {
+  padding-top: 100px; 
+}
+
+body.homepage {
+  padding-top: 0px; 
+}

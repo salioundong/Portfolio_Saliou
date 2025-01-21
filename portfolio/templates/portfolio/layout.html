@@ -8,78 +8,57 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Saliou Ndong - Computer learner</title>
-        <!-- Favicon-->
         <link rel="icon" type="image/png" sizes="128x128" href="{% static 'assets/img/sn.png' %}">
-        <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
         <link rel="stylesheet" href="{% static 'portfolio/styles.css' %}">
     </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand" href="#page-top">
-                    <img src="{% static 'assets/img/logo1.jpg' %}" alt="Logo" style="height: 100px;">
-                </a>
-                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        
-        <div class="content-wrapper"> <!-- Added min-height here -->
-            {% block body %}
-            {% endblock %}
-        </div>
-        
-        <!-- Footer-->
-        <footer class="footer text-center">
-            <div class="container">
-                <div class="row">
-                    <!-- Footer Location-->
-                    <!-- <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Location</h4>
-                        <p class="lead mb-0">
-                            3092, Place Louis Hémon
-                            <br />
-                            Shawinigan, G9N7C9
-                        </p>
-                    </div> -->
-                    <!-- Footer Social Icons-->
-                    <div class="col-12">
-                        <h4 class="text-uppercase mb-4">Around the Web</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/zale.ndongo.3/about_life_events?locale=fr_CA"><i class="fab fa-fw fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://x.com/SaliouNdong5"><i class="fab fa-fw fa-twitter"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/saliou-ndong-3409492b9/"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/salioundong"><i class="fab fa-fw fa-github"></i></a>
+    <body id="page-top" class="{% block body_class %}page-with-navbar{% endblock %}">
+        <div class="wrapper">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+                <div class="container">
+                    <a class="navbar-brand" href="#page-top">
+                        <img src="{% static 'assets/img/logo1.jpg' %}" alt="Logo" style="height: 100px;">
+                    </a>
+                    <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        Menu
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
+                            <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
+                            <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+                        </ul>
                     </div>
-                    <!-- Footer About Text-->
-                    <!-- <div class="col-lg-4">
-                        <h4 class="text-uppercase mb-4">About Freelancer</h4>
-                        <p class="lead mb-0">
-                            Freelance is a free to use, MIT licensed Bootstrap theme created by
-                            <a href="http://startbootstrap.com">Start Bootstrap</a>
-                            .
-                        </p>
-                    </div> -->
                 </div>
+            </nav>
+
+            <!-- Corps de la page -->
+            <main>
+                {% block body %}
+                {% endblock %}
+            </main>
+
+            <!-- Footer-->
+            <footer class="footer text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h4 class="text-uppercase mb-4">Around the Web</h4>
+                            <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/zale.ndongo.3/about_life_events?locale=fr_CA"><i class="fab fa-fw fa-facebook-f"></i></a>  
+                            <a class="btn btn-outline-light btn-social mx-1" href="https://x.com/SaliouNdong5"><i class="fab fa-fw fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/saliou-ndong-3409492b9/"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/salioundong"><i class="fab fa-fw fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <div class="copyright py-4 text-center text-white">
+                <div class="container"><small>Copyright &copy; Saliou Ndong 2025</small></div>
             </div>
-        </footer>
-        <!-- Copyright Section-->
-        <div class="copyright py-4 text-center text-white">
-            <div class="container"><small>Copyright &copy; Saliou Ndong 2025</small></div>
         </div>
     </body>
 </html>
