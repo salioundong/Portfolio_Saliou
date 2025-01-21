@@ -8,3 +8,9 @@ def index(request):
 
 def projectA(request):
     return render(request, "portfolio/projectA.html")
+
+def projectB(request):
+    return render(request, "portfolio/projectB.html")
+
+def projectC(request):
+    return render(request, "portfolio/projectC.html")
