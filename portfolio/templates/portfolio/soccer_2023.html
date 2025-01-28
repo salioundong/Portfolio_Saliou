@@ -1,0 +1,58 @@
+{% extends "portfolio/layout.html" %}
+
+{% load static %}
+
+{% block body_class %}page-with-navbar{% endblock %}
+
+{% block body %}
+    <div class="container" style="margin-bottom: 100px;">
+        <div class="row">
+            <h3>Soccer 2023</h3>
+            <hr class="border-2">
+        </div><br>
+
+        <div class="row mb-3">
+            <div class="col-sm-8">
+                <img class="img-fluid" src="{% static 'assets/img/img_projects/soccer 2023.png' %}" />
+            </div>
+            <div class="col-sm-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <p class="card-text"><strong>Date:</strong> January 2023</p>
+                        <p class="card-text"><strong>Technologies used:</strong> GDScript</p>
+                        <a href="https://github.com/salioundong/Soccer_2023" target="_blank" class="text-decoration-none">Source code</a>
+                    </div>
+                </div>
+            </div>     
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="text-justify">
+                    <h3>Concept</h3>
+                    <p class="fs-5">
+                        It was as part of an academic project which consisted of creating a complete video game.
+                    </p>
+                    <h3>Why Soccer?</h4>
+                    <p class="fs-5">
+                        I have always had a particular attraction to football. When I talk about football, 
+                        I'm talking about modern football better known in Europe, but in Canada they call it soccer. 
+                        In short, I decided to make my game and represent some concepts like ball control, 
+                        goal detection, etc. You may have more details by visiting my <b>Github</b> with the source code link at the top.
+                    </p>
+                    <h3>Learning</h3>
+                    <p class="fs-5">
+                        Through this project, I learned a new programming language which is
+                        <a href="https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_basics.html" 
+                           target="_blank" class="text-decoration-none" class="text-decoration-none">GDScript</a> : an
+                        an object-oriented programming language designed to 
+                        <a href="https://godotengine.org/" class="text-decoration-none">Godot.</a> The project could be done with
+                        C#, but as I had already learned this language, I preferred the novelty and doing it with GDScript.
+                        which is also simpler than C# with Godot.
+                    </p>                    
+                </div>
+            </div>
+        </div>    
+    </div>
+
+{% endblock %}
