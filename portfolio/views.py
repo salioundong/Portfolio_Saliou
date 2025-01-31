@@ -9,8 +9,8 @@ def index(request):
 def soccer2023(request):
     return render(request, "portfolio/soccer_2023.html")
 
-def projectB(request):
-    return render(request, "portfolio/projectB.html")
+def roboGenius(request):
+    return render(request, "portfolio/RoboGenius.html")
 
 def projectC(request):
     return render(request, "portfolio/projectC.html")
