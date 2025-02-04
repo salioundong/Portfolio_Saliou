@@ -12,5 +12,5 @@ def soccer2023(request):
 def roboGenius(request):
     return render(request, "portfolio/RoboGenius.html")
 
-def projectC(request):
-    return render(request, "portfolio/projectC.html")
+def materialManage(request):
+    return render(request, "portfolio/materialManage.html")
