@@ -15,7 +15,7 @@
 
         <div class="row mb-3">
             <div class="col-sm-8">
-                <p class="fs-4">
+                <p class="fs-4 text-justify">
                     This is a small overview of the purpose of the project. The robot had a long journey to make.
                 </p>
                 <h3>Demo</h3>
@@ -33,31 +33,24 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="row">
             <div class="col-sm-8">
                 <div class="text-justify">
-                    <h3>The robot itself</h3>
-                </div>
-                <div class="row">
-                    <div class="col-sm-3">
-                        <img class="img-fluid" src="{% static 'assets/img/img_projects/robot1.jpg' %}" />
-                    </div>
-                    <div class="col-sm-3">
-                        <img class="img-fluid" src="{% static 'assets/img/img_projects/robot2.jpg' %}" /> 
-                    </div>
-                    <div class="col-sm-3">
-                        <img class="img-fluid" src="{% static 'assets/img/img_projects/robot3.jpg' %}" /> 
-                    </div>
-                    <div class="col-sm-3">
-                        <img class="img-fluid" src="{% static 'assets/img/img_projects/robot4.jpg' %}" /> 
-                    </div>
-                </div><br>
-                <div>
-                    <h3>
-                        It's includes:
-                    </h3>
+                    <br><h3>The robot itself</h3>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <img class="img-fluid" src="{% static 'assets/img/img_projects/robot1.jpg' %}" />
+                        </div>
+                        <div class="col-sm-3">
+                            <img class="img-fluid" src="{% static 'assets/img/img_projects/robot2.jpg' %}" /> 
+                        </div>
+                        <div class="col-sm-3">
+                            <img class="img-fluid" src="{% static 'assets/img/img_projects/robot3.jpg' %}" /> 
+                        </div>
+                        <div class="col-sm-3">
+                            <img class="img-fluid" src="{% static 'assets/img/img_projects/robot4.jpg' %}" /> 
+                        </div>
+                    </div><br>
+                    <h3>It's includes:</h3>
                     <ul class="fs-4">
                         <li>Motors with encoder</li>
                         <li>Aluminum chassis</li>
@@ -66,18 +59,25 @@
                         <li>Temperature, light, power sensor</li>
                         <li>Buzzer</li>
                         <li>Motherboard compatible with the Arduino Mega</li>
-                    </ul>
-                </div><br>
-                <div>
+                    </ul><br>
                     <h3>Particularities and learning</h3>
                     <p class="fs-4">
-                        Ayant un faible intérêt pour l'électronique en général, j'ai quand même aimé découvrir le robot <b>mBot Ranger</b>
-                        de la compagnie
-                        <a href="https://www.makeblock.com/pages/mbot-ranger-robot-building-kit" class="text-decoration-none" target="_blank">
-                            MakeBlock
-                        </a><span>.</span>
+                        Although I have always had little interest in electronics in general, I still enjoyed my familiarization with the
+                        <b>mBot Ranger</b> of the company 
+                        <a href="https://www.makeblock.com/pages/mbot-ranger-robot-building-kit" target="_blank" class="text-decoration-none">MakeBlock</a>. 
+                        Because it allowed me to play with the robot to react to sound intensity, light detection, 
+                        obstacle avoidance, line following which consists of guiding the device along a trajectory defined by a line 
+                        which is usually black in color on a pale background. Line following is also a fairly common task
+                        in robotics competitions as well as academic projects.<br>
+                        <br>I learned and used all these mechanisms in small separate projects and then integrated them all into one big 
+                        project shown in the demo at the top of the page. You can see that the robot has had a little of misery at a given
+                        moment to continue its trajectory because of a small problem with line following. Which also led to the intervention
+                        of my hand to put the robot back on the line.<br>
+                        <br>I unfortunately lost the source code because I changed computer in the meantime and at the time I didn't use  
+                        <a href="https://github.com/" class="text-decoration-none" target="_blank">Github</a> to push my projects forward.                               
                     </p>
-                </div>   
+                </div>
+                      
             </div>
         </div>
     </div>
