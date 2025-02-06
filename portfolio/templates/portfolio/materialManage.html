@@ -7,14 +7,27 @@
 {% block body %}
     <div class="container" style="margin-bottom: 100px; margin-top: -50px;">
         <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm12">
                 <h3>MaterialManage</h3>
                 <hr>
             </div>
-        </div><br>
+        </div>
 
         <div class="row mb-3">
-            <div class="col-sm-8 text-justify">
+            <div class="col-12 col-md-4 order-1 order-md-2 mt-3 mt-sm-0">
+                <div class="card shadow-sm mb-sm-5">
+                    <div class="card-body">
+                        <div class="fs-5">
+                            <img class="img-fluid img-centered" src="{% static 'assets/img/img_projects/img emprunt.jpeg' %}" alt="...">
+                            <p class="card-text"><strong>Date:</strong> December 2023</p>
+                            <p class="card-text"><strong>Technologies used:</strong> JS, React, JSX, Expo Go </p>
+                            <a href="https://bitbucket.org/dev-mobile23/empruntdemateriel/src/master/" target="_blank" class="text-decoration-none">Source code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-8 order-2 order-md-1 text-justify">
                 <p class="fs-4">
                     Complete mobile application for equipment borrowing management.
                 </p><br>
@@ -31,28 +44,16 @@
                 <p class="fs-4">
                     I played with the authentification as can be seen with the image next to it.
                     And for each entity that I had to do, I implemented the creation of the entity,
-                    the modification, the reading as well as its deletion from the list abd the
+                    the modification, the reading as well as its deletion from the list and the
                     database hence the CRUDL type.
                 </p><br>
                 <h3>Learning</h3>
                 <p class="fs-4">
-                    I had to learn <a class="text-decoration-none" target="_blank" href="https://reactnative.dev/">React Native</a>
-                    which is an open source mobile application framework created by <b>Facebook</b>. For my native gateway, I used
+                    J'ai eu à apprendre <a class="text-decoration-none" target="_blank" href="https://reactnative.dev/">React Native</a>
+                    qui est un framework d'applications mobiles open source créé par <b>Facebook</b>. Pour ma passerelle native, j'ai utilisé
                     <a href="https://expo.dev/" class="text-decoration-none" target="_blank">Expo</a>
-                    and the mobile application <b>Expo Go</b> to test my code on my mobile device
+                    et l'application mobile <b>Expo Go</b> pour tester mon code sur mon appareil.
                 </p><br>
-            </div>
-            <div class="col-sm-4 mt-3 mt-sm-0">
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <div class="fs-5">
-                            <img class="img-fluid img-centered" src="{% static 'assets/img/img_projects/img emprunt.jpeg' %}" alt="...">
-                            <p class="card-text"><strong>Date:</strong> December 2023</p>
-                            <p class="card-text"><strong>Technologies used:</strong> JS, React, JSX, Expo Go </p>
-                            <a href="https://bitbucket.org/dev-mobile23/empruntdemateriel/src/master/" target="_blank" class="text-decoration-none">Source code</a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
