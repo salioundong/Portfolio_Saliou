@@ -1,0 +1,40 @@
+{% extends "portfolio/layout.html" %}
+
+{% load static %}
+
+{% block body_class %}page-with-navbar{% endblock %}
+
+{% block body %}
+    <div class="container" style="margin-bottom: 100px; margin-top: -50px;">
+        <div class="row">
+            <div class="col-sm-12">
+                <h3>Meteo</h3>
+                <hr>
+            </div>   
+        </div><br>
+
+        <div class="row mb-3">
+            <div class="col-sm-8">
+                <p class="fs-4"></p>
+                <div><br></div>
+                <!-- <img class="img-fluid img-centered" src="{% static 'assets/img/img_projects/soccer 2023.png' %}" /> -->
+            </div>
+            <div class="col-sm-4 mt-3 mt-sm-0">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <div class="fs-4">
+                            <p class="card-text"><strong>Date:</strong> November 2023</p>
+                            <p class="card-text"><strong>Technologies used:</strong> </p>
+                            <a href="https://github.com/salioundong/Meteo" target="_blank" class="text-decoration-none">Source code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <div class="text-justify">
+                    
+                </div>
+            </div>     
+        </div>   
+    </div>
+{% endblock %}

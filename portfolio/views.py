@@ -14,3 +14,6 @@ def roboGenius(request):
 
 def materialManage(request):
     return render(request, "portfolio/materialManage.html")
+
+def meteo(request):
+    return render(request, "portfolio/meteo.html")
