@@ -117,44 +117,50 @@
     </section>
     <!-- About Section-->
     <section class="page-section bg-primary text-white mb-0" id="about">
+        <style>
+            .about-box {
+                background-color: rgba(255, 255, 255, 0.15);
+                transition: background-color 0.3s ease;
+            }
+            
+            .about-box:hover {
+                background-color: rgba(255, 255, 255, 0.30);
+                cursor: default;
+            }
+        </style> 
         <div class="container">
-            <!-- About Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
-            <!-- Icon Divider-->
-            <div class="divider-custom divider-light">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                <div class="divider-custom-line"></div>
+            <!-- Section Heading -->
+            <h2 class="text-center text-uppercase fw-bold mb-4" style="letter-spacing: 2px;">About Me</h2>
+        
+            <!-- Decorative Divider -->
+            <div class="d-flex justify-content-center align-items-center mb-5">
+                <div class="flex-grow-1 border-top border-light opacity-50"></div>
+                <div class="px-3 text-warning fs-3"><i class="fas fa-star"></i></div>
+                <div class="flex-grow-1 border-top border-light opacity-50"></div>
             </div>
-            <!-- About Section Content-->
-            <div class="row">
-                <div class="col-12">
-                    <p class="fs-4 text-center">
-                        <strong class="highlight-text">I AM SALIOU NDONG AND I AM PASSIONATE ABOUT COMPUTERS AND TECHNOLOGY.</strong><br><br>
-                    </p>
-                </div>
-
-                <div class="row mb-3">
-                    <div class="col-lg-4 mx-auto">
-                        <div>
-                            <p class="fs-4">
-                                I am a young person passionate about technology and the many possibilities it offers. 
-                                I am curious and I never stop learning more to solidify my already acquired knowledge, but also to gain new ones.
-                            </p>
-                        </div>
-                    </div>                    
-                
-                    <div class="col-lg-4 mx-auto">
-                        <div>
-                            <p class="fs-4">
-                                I am also very interested in everything related to data, namely databases or the management of these. 
-                                I would like to learn more about this topic, do a lot of projects with the aim of exploring and digging deeper.
-                            </p>
-                        </div>
+      
+            <!-- Intro Text -->
+            <p class="lead text-center mb-5 px-3" style="max-width: 800px; margin-inline: auto;">
+                I am Saliou Ndong, passionate about technology, creativity, and the endless learning opportunities it brings.
+            </p>
+      
+            <!-- Content Rows -->
+            <div class="row text-center gy-4">
+                <div class="col-lg-6 px-4">
+                    <div class="p-4 h-100 rounded-4 text-white about-box">
+                        <p class="mb-0 fs-5">
+                            I'm a curious learner who enjoys exploring how technology shapes our world. I constantly seek ways to strengthen my knowledge and expand my expertise through hands-on experience.
+                        </p>
                     </div>
                 </div>
-                
+                <div class="col-lg-6 px-4">
+                    <div class="p-4 h-100 rounded-4 text-white about-box">
+                        <p class="mb-0 fs-5">
+                            I'm especially drawn to data — databases, data architecture, and how to manage information effectively. I aspire to build impactful data projects and deepen my skills in this domain.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+    </section>     
 {% endblock %}
