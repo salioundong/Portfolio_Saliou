@@ -1,0 +1,23 @@
+{% extends "portfolio/layout.html" %}
+
+{% load static %}
+
+{% block body %}
+    <div class="container" style="margin-bottom: 100px; margin-top: -50px;">
+        <div class="row">
+            <div class="col-sm-12">
+                <h3>SNDONG.CA </h3>
+                <hr>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-sm-8">
+                <p class="fs-4">Welcome to my portfolio! Here you can find various projects I have worked on.</p>
+            </div>
+            <div class="col-sm-4 mt-3 mt-sm-0">
+                <img class="img-fluid img-centered" src="{% static 'assets/img/avatar.png' %}" alt="Avatar">
+            </div>
+        </div>
+    </div>
+{% endblock %}

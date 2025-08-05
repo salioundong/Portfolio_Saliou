@@ -95,12 +95,17 @@
                     </div>
                 </div>
                 <!-- Portfolio Item 5-->
-                <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/safe.png" alt="..." />
+                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                    <div class="portfolio-item mx-auto">
+                        <a href="{% url 'sndongca' %}">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">
+                                    <i class="fas fa-eye fa-3x"></i>
+                                    <p>salioundong.ca</p>
+                                </div>
+                            </div>
+                            <img class="img-fluid" style="object-fit: cover; height: 300px; width: auto;" src="{% static 'assets/img/sndongca.png' %}" alt="..." />
+                        </a>
                     </div>
                 </div>
                 <!-- Portfolio Item 6-->
@@ -141,7 +146,7 @@
       
             <!-- Intro Text -->
             <p class="lead text-center mb-5 px-3" style="max-width: 800px; margin-inline: auto;">
-                I am Saliou Ndong, passionate about technology, creativity, and the endless learning opportunities it brings.
+                I am Saliou Ndong and I am passionate about computers and technology.
             </p>
       
             <!-- Content Rows -->
@@ -149,14 +154,18 @@
                 <div class="col-lg-6 px-4">
                     <div class="p-4 h-100 rounded-4 text-white about-box">
                         <p class="mb-0 fs-5">
-                            I'm a curious learner who enjoys exploring how technology shapes our world. I constantly seek ways to strengthen my knowledge and expand my expertise through hands-on experience.
+                            I am a young individual deeply passionate about technology and the endless possibilities it offers. 
+                            Driven by curiosity, I am constantly learning not only to strengthen the knowledge I already have,
+                            but also to acquire new skills and insights.
                         </p>
                     </div>
                 </div>
                 <div class="col-lg-6 px-4">
                     <div class="p-4 h-100 rounded-4 text-white about-box">
                         <p class="mb-0 fs-5">
-                            I'm especially drawn to data — databases, data architecture, and how to manage information effectively. I aspire to build impactful data projects and deepen my skills in this domain.
+                            I am particularity interested in data and everything related to it, such as databasses and their management.
+                            I aspire to dive deeper into this field by working on various projects that allow me to explore and develop 
+                            a deeper understanding.
                         </p>
                     </div>
                 </div>

@@ -17,3 +17,6 @@ def materialManage(request):
 
 def meteo(request):
     return render(request, "portfolio/meteo.html")
+
+def sndongca(request):
+    return render(request, "portfolio/sndong-ca.html")

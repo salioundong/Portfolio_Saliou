@@ -7,4 +7,5 @@ urlpatterns = [
     path("roboGenius", views.roboGenius, name="roboGenius"),
     path("materialManage", views.materialManage, name="materialManage"),
     path("meteo", views.meteo, name="meteo"),
+    path("sndong-ca", views.sndongca, name="sndongca"),
 ]
