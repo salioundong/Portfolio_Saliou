@@ -2,6 +2,8 @@
 
 {% load static %}
 
+{% block title %}SNDONG.CA{% endblock %}
+
 {% block body %}
     <div class="container" style="margin-bottom: 100px; margin-top: -50px;">
         <div class="row">
@@ -12,11 +14,38 @@
         </div>
 
         <div class="row mb-3">
-            <div class="col-sm-8">
-                <p class="fs-4">Welcome to my portfolio! Here you can find various projects I have worked on.</p>
+            <div class="col-12 col-md-8 order-2 order-md-1">
+                <p class="fs-4 mt-3">Here you can find various projects I have worked on.</p><br>
+                <h3>Concept</h3>
+                <p class="fs-4">
+                    This website is a personal portfolio that showcases my projects and skills. 
+                    It is designed to provide visitors with an overview of my work and expertise.
+                </p>
+                <h3>Why SNDONG.CA?</h3>
+                <p class="fs-4">
+                    I wanted to create a personal website that reflects my identity and showcases my work. 
+                    The domain name "sndong.ca" is a combination of my name and the ".ca" domain, which represents Canada, 
+                    where I am based. It serves as a professional online presence for me.
+                </p>
+                <h3>Learning</h3>
+                <p class="fs-4">
+                    Through this project, I learned how to create a personal portfolio website using 
+                    <a href="https://www.djangoproject.com/" target="_blank" class="text-decoration-none">Django</a> and 
+                    <a href="https://getbootstrap.com/" target="_blank" class="text-decoration-none">Bootstrap</a>. 
+                    I also learned how to deploy a Django application on a web server.
+                    The website is designed to be responsive and user-friendly, allowing visitors to easily navigate through my projects and skills.
+                </p>
+                <h3>Source Code</h3>
+                <p class="fs-4">
+                    You can find the source code for this project on my 
+                    <a href="https://github.com/salioundong/Portfolio_Saliou" target="_blank" class="text-decoration-none">GitHub</a> repository.
+                    Feel free to explore and contribute to the project if possible.
+                </p>
             </div>
-            <div class="col-sm-4 mt-3 mt-sm-0">
-                <img class="img-fluid img-centered" src="{% static 'assets/img/avatar.png' %}" alt="Avatar">
+            <div class="col-12 col-md-4 order-1 order-md-2 mt-3 mt-sm-0">
+                <div class="card shadow-sm">
+                    <img class="img-fluid img-centered" style="filter: blur(1px);" src="{% static 'assets/img/portfolio.png' %}" alt="Avatar">
+                </div>
             </div>
         </div>
     </div>
